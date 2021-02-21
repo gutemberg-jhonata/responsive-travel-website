@@ -170,3 +170,51 @@ section {
         margin-left: var(--space-sm);       
     }
 }
+
+/* ABOUT US */
+
+.section-name {
+    text-transform: uppercase;
+    color: #bdbdbd;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-us p {
+    color: #828282;
+    margin: 0;
+}
+
+.about-us img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.about-us__content {
+    margin-top: var(--space-lg);
+
+    display: grid;
+    gap: var(--space-xl);
+}
+
+.about-us__content--left, .about-us__content--right {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 760px) {
+    .about-us__content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-us__content--right img {
+        order: -1;
+    }
+}
